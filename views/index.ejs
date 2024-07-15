@@ -1,0 +1,45 @@
+<!-- <%- include('partials/header') %> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenidos a nuestra tienda</h1>
+        <nav>
+            <% if (session.userId) { %>
+                <a href="/carrito">Carrito (<%= session.carrito.length %>)</a>
+                <a href="/logout">Cerrar sesión</a>
+            <% } else { %>
+                <a href="/login">Iniciar sesión</a>
+                <a href="/register">Registrarse</a>
+            <% } %>
+        </nav>
+    </header>
+    <main>
+        <h2>Productos</h2>
+        <div class="products">
+            <% productos.forEach(producto => { %>
+                <div class="product">
+                    <img src="<%= producto.image %>" alt="<%= producto.nombre %>">
+                    <h3><%= producto.nombre %></h3>
+                    <p><%= producto.descripcion %></p>
+                    <p>$<%= producto.precio.toFixed(2) %></p>
+                    <% if (session.userId) { %>
+                        <form action="/agregar-al-carrito" method="POST">
+                            <input type="hidden" name="id" value="<%= producto.id %>">
+                            <button type="submit" <%= producto.disponibilidad ? '' : 'disabled' %>>Agregar al carrito</button>
+                        </form>
+                    <% } else { %>
+                        <p>Inicia sesión para agregar al carrito</p>
+                    <% } %>
+                </div>
+            <% }) %>
+        </div>
+    </main>
+</body>
+</html>

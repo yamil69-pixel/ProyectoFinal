@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pan de Masa Madre",
+    "descripcion": "Pan artesanal hecho con masa madre natural.",
+    "precio": 3.50,
+    "categoria": "panes",
+    "image": "/imagenes/Pan de Masa Madre.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 2,
+    "nombre": "Croissant",
+    "descripcion": "Crujiente y hojaldrado croissant de mantequilla.",
+    "precio": 2.00,
+    "categoria": "pasteles",
+    "image": "/imagenes/Croissant.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 3,
+    "nombre": "Tarta de Manzana",
+    "descripcion": "Tarta casera rellena de manzanas frescas.",
+    "precio": 5.00,
+    "categoria": "pasteles",
+    "image": "/imagenes/Tarta de Manzana.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 4,
+    "nombre": "Baguette",
+    "descripcion": "Clásica baguette francesa crujiente por fuera y suave por dentro.",
+    "precio": 2.50,
+    "categoria": "panes",
+    "image": "/imagenes/Baguette.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 5,
+    "nombre": "Muffin de Chocolate",
+    "descripcion": "Muffin esponjoso con trozos de chocolate.",
+    "precio": 1.80,
+    "categoria": "pasteles",
+    "image": "/imagenes/Muffin de Chocolate.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 6,
+    "nombre": "Pan Integral",
+    "descripcion": "Pan saludable hecho con harina integral.",
+    "precio": 3.00,
+    "categoria": "panes",
+    "image": "/imagenes/Pan Integral.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 7,
+    "nombre": "Donut Glaseado",
+    "descripcion": "Donut suave con glaseado de azúcar.",
+    "precio": 1.50,
+    "categoria": "pasteles",
+    "image": "/imagenes/Donut Glaseado.jpg",
+    "disponibilidad": true
+  },
+  {
+    "id": 8,
+    "nombre": "Empanada de Pollo",
+    "descripcion": "Empanada rellena de pollo sazonado.",
+    "precio": 2.20,
+    "categoria": "empanadas",
+    "image": "/imagenes/Empanada de Pollo.jpg",
+    "disponibilidad": true
+  },
+  {
+   "id": 9,
+    "nombre": "Pan de Nuez",
+    "descripcion": "Pan de nuez con un sabor único.",
+    "precio": 2.20,
+    "categoria": "panes",
+    "image": "/imagenes/Pan de Nuez.webp",
+    "disponibilidad": true
+
+  },
+  {
+    "id": 10,
+    "nombre": "Pan de Almendra",
+    "descripcion": "Pan de almendra con textura crujiente.",
+    "precio": 2.50,
+    "categoria": "panes",
+    "image": "/imagenes/pan de almendras.jpg",
+    "disponibilidad": true
+  }
+]
